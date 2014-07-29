@@ -1,0 +1,40 @@
+<html>
+<head>
+	<title>Edutrest</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.20/angular.min.js"></script>
+    <script src="https://cdn.firebase.com/js/client/1.0.18/firebase.js"></script>
+    <script src="https://cdn.firebase.com/libs/angularfire/0.7.1/angularfire.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body onload="setUpCards();">
+
+	<div class="card">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in dui velit. Curabitur purus odio, adipiscing ut vehicula at, pulvinar eu justo. Suspendisse potenti. Suspendisse dictum massa non mi posuere ac convallis nisi pellentesque. Morbi posuere mauris elementum metus intlla faProin et malesuada arcu. Quisque sed nulla odio, at interdum diam. Proin mollis, dui eget tristique dictum, diam purus hendrerit urna, lacinia interdum sem justo sit amet justo. Morbi a neque ut velit tempus auctor. Sed condimentum dolor in est facilisis id malesuad</p>
+    </div>
+
+    <div class="card">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in dui velit. Curabitur purus odio, adipiscing ut vehicula at, pulvinar eu justo. Suspendisse potenti. Suspendisse dictum massa non mi posuere ac convallis nisi pellentesque. Morbi posuere mauris elementum metus intlla faProin et malesuada arcu. Quisque sed nulla odio, at interdum diam. Proin mollis, dui eget tristique dictum, diam purus hendrerit urna, lacinia interdum sem justo sit amet justo. Morbi a neque ut velit tempus auctor. Sed condimentum dolor in est facilisis id malesuad</p>
+    </div>
+
+
+	<div ng-controller="cardsCtrl">
+		<header>Edutrest</header>
+		<div id="card">
+			<div ng-repeat="cards in cards">
+			{{ card. }}
+			</div>
+		</div>
+			
+		<form>
+			<input type="text" id="pin_content" ng-model="newpin"/>
+			<button id="pin" ng-click="addChat();" type="submit" placeholder="Type Here">Send
+			</button>
+		</form>
+
+	</div>
+
+</body>
+</html>
